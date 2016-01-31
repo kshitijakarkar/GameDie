@@ -10,9 +10,9 @@ GameDie::GameDie()
 }
 
 //generate a random number between 1-6 (inclusive) and display it
-void GameDie::roll()
+int GameDie::roll()
 {
    int i=rand()%7;
    if(i!=0)
-      cout<<" Your number is : "<<i<<endl;
+      return i;
 }
