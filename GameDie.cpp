@@ -7,12 +7,17 @@ using namespace std;
 GameDie::GameDie()
 {
    srand(time(NULL));
+   
+   
 }
 
 //generate a random number between 1-6 (inclusive) and display it
 int GameDie::roll()
 {
-   int i=rand()%7;
+   int face;
+   cout<<"Enter number of faces between 4 and 20 :";
+   cin>>face;
+   int i=rand()%face + 1;
    if(i!=0)
       return i;
 }
