@@ -14,5 +14,5 @@ void GameDie::roll()
 {
    int i=rand()%7;
    if(i!=0)
-      cout<<" Your number is : "<<i<<endl;
+      cout<<" Your number is :"<<i<<endl;
 }
